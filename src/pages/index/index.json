@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "mt-icon": "../../components/mt-icon/mt-icon"
+  }
+}

@@ -1,0 +1,3 @@
+<view class="mt-icon">
+  <image src="{{iconImage}}" aria-label="icon" mode="scaleToFill" style="width: {{ width }}; height: {{ height }};"/>
+</view>

@@ -1,0 +1,53 @@
+@import './styles/config.less';
+
+page {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    min-height: 100%;
+    color: @text-color;
+    font-size: @font-normal;
+    background-color: @background-color;
+}
+
+.icon-shop {
+    flex-shrink: 0;
+    width: 60rpx;
+    height: 60rpx;
+    background: url('./images/icon-shop.png') no-repeat;
+    background-size: 40rpx;
+    background-position: center;
+}
+
+.icon-phone {
+    flex-shrink: 0;
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 10rpx;
+    margin-left: 20rpx;
+    border: 1px solid @text-color;
+    border-radius: 50%;
+    background: url('./images/icon-phone.png') no-repeat;
+    background-size: 40rpx;
+    background-position: center;
+}
+
+.icon-map {
+    flex-shrink: 0;
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 10rpx;
+    border: 1px solid @text-color;
+    border-radius: 50%;
+    background: url('./images/icon-map.png') no-repeat;
+    background-size: 40rpx;
+    background-position: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}

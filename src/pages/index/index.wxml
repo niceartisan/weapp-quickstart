@@ -1,0 +1,4 @@
+<view style="text-align: center;">
+  <view>{{text}}</view>
+  <mt-icon name="avatar.jpg" width="200px" height="200px"></mt-icon>
+</view>
