@@ -1,5 +1,5 @@
 {
-  "pages": ["pages/index/index"],
+  "pages": ["pages/sync-scroll/sync-scroll", "pages/index/index"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

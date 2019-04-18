@@ -1,0 +1,20 @@
+<!-- 使用scroll-view实现左右联动滚动效果 -->
+<view class="index-wrapper">
+  <view class="index-content">
+    <scroll-view class="sidebar" scroll-y scroll-with-animation="{{true}}" scroll-top="{{itemHeight * selected + 'rpx'}}">
+      <view id="{{'sidebar-' + siderIndex}}" class="{{siderIndex === selected ? 'sidebar-item sidebar-item-selected' : 'sidebar-item'}}" wx:key="{{item.id}}" wx:for="{{items}}" wx:for-index="siderIndex" data-index="{{siderIndex}}" bind:tap="onItemTap">
+        {{item.name}}
+      </view>
+      <view class="add-height"></view>
+    </scroll-view>
+    <scroll-view class="tea-scroll" scroll-y scroll-with-animation="{{true}}" scroll-into-view="{{viewName}}" bind:scroll="onContentScroll">
+      <view class="tea-type-block {{typeIndex === items.length - 1 && 'tea-type-block-last'}}" id="{{'tea-type-' + typeIndex}}" wx:key="{{item.name}}" wx:for="{{items}}" wx:for-index="typeIndex">
+      <view class="tea-type-wrapper">
+          <view class="tea-type-title">{{item.name}}</view>
+          <view class="tea-type-divider"></view>
+        </view>
+        <view class="tea-item-block" wx:key="{{subItems.id}}" wx:for="{{item.subItems}}" wx:for-item="teaItem"></view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

@@ -87,5 +87,8 @@ module.exports = {
       }
     }
     return format;
+  },
+  rpx2px(rpx) {
+    return (wx.getSystemInfoSync().windowWidth / 750) * rpx;
   }
 };
